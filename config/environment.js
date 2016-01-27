@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'maggie-website',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://magelrob.firebaseIO.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
