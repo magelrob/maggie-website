@@ -1,5 +1,14 @@
 # Maggie-website
 
+## Deploy
+
+```
+ember build | firebase deploy
+```
+
+Hosted: (https://magelrob.firebaseapp.com/)
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
