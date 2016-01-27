@@ -2,10 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'maggie-website',
+    modulePrefix: 'magelrob.github.io',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/magelrob.github.io',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
