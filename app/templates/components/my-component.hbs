@@ -1,0 +1,19 @@
+
+{{#if isExpanded}}
+  <button class="ui red button" {{action "toggleBody"}}>
+  <i class="angle up icon"></i>
+  Hide Body
+  </button>
+    <div class="ui horizontal divider">
+    Body
+  </div>
+  <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit totam facilis, libero quis accusantium enim. Maxime repellat dignissimos vel, et pariatur doloremque iure, adipisci praesentium ex facilis architecto autem. Nihil.
+	</p>
+
+{{else}}
+  <button class="ui primary button" {{action "toggleBody"}}>
+  <i class="angle down icon"></i>
+  Show Body
+  </button>
+{{/if}}

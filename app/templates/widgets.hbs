@@ -1,17 +1,36 @@
-<div class="ui container">
 
-<h1>hello there</h1>
+<div class="ui container ">
+{{!-- Adds padding --}}
+  <div class="ui segment">
+  {{!-- Adds a box --}}
+  
+    {{{someHTML}}}
 
-{{#ui-dropdown class="selection" onChange=(action 'update_selected')}}
-  <div class="default text">Select an item</div>
-  <i class="dropdown icon"></i>
-  <div class="menu">
-  {{#each itemActions as |ac|}}
-    <div class="item" data-id="{{ac}}">
-      {{ac}}
-    </div>
-  {{/each}}
+        My name is {{author.name}}, visit my <a href="{{author.website}}">Website!</a>
+
+
+    {{#ui-dropdown class="selection" onChange=(action 'update_selected')}}
+      <div class="default text">Select an item</div>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+      {{#each itemActions as |ac|}}
+        <div class="item" data-id="{{ac}}">
+          {{ac}}
+        </div>
+      {{/each}}
+      </div>
+    {{/ui-dropdown}}
+
+    <h1>More stuff</h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem labore, distinctio unde alias, obcaecati commodi, tenetur officia ipsam iure ducimus soluta, harum voluptatibus maiores necessitatibus quo quasi reprehenderit quis!
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem labore, distinctio unde alias, obcaecati commodi, tenetur officia ipsam iure ducimus soluta, harum voluptatibus maiores necessitatibus quo quasi reprehenderit quis!
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem labore, distinctio unde alias, obcaecati commodi, tenetur officia ipsam iure ducimus soluta, harum voluptatibus maiores necessitatibus quo quasi reprehenderit quis!
+    </p>
+        
   </div>
-{{/ui-dropdown}}
-
 </div>
